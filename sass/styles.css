@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.transicion, .contactame .azul img, .contactame .azul, .educacion .girado img, .educacion .girado, .informacion .blanco img, .informacion .blanco {
+  transition: all 0.3s ease-in-out;
+}
+
+nav {
+  background: #02031c;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px;
+  z-index: 100;
+}
+nav img {
+  width: 200px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 30px;
+}
+nav ul li a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li button {
+  font-size: 24px;
+  padding: 5px 20px;
+  background: #02031c;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.informacion {
+  display: flex;
+  padding-top: 60px;
+  background-color: #02031c;
+  width: 100%;
+  overflow: hidden;
+}
+.informacion .blanco {
+  background-image: url("../images/rectangulo_blanco.png");
+  width: 80%;
+  margin: 0px 0px 40px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  transform: translate(80px, 0);
+}
+.informacion .blanco:hover {
+  transform: translate(0, 0);
+}
+.informacion .blanco:hover img {
+  transform: translate(0, 0);
+}
+.informacion .blanco img {
+  width: 100%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-80px, 0);
+}
+.informacion div {
+  background-color: #02031c;
+  color: #fff;
+}
+.informacion div h1 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.informacion div p {
+  font-size: 28px;
+  width: 85%;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.experiencia {
+  display: flex;
+}
+.experiencia h2 {
+  display: inline-block;
+  text-align: center;
+  color: #02031c;
+  font-size: 80px;
+  transform: rotate(270deg) translate(-40%, -60%);
+}
+.experiencia .programas {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-250px, 0);
+}
+.experiencia .programas div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px 20px;
+}
+.experiencia .programas div div {
+  height: 250px;
+  width: 290px;
+}
+.experiencia .programas div div img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 180px;
+}
+.experiencia .programas div div p {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: #02031c;
+  margin-bottom: 10px;
+}
+
+.educacion {
+  background-color: #02031c;
+  display: flex;
+  color: #fff;
+  text-align: right;
+  overflow: hidden;
+}
+.educacion .girado {
+  background-image: url("../images/rectangulo_blanco_girado.png");
+  width: 60%;
+  margin: 0px 0px 40px;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: flex-end;
+  transform: translate(-80px, 0);
+}
+.educacion .girado:hover {
+  transform: translate(0, 0);
+}
+.educacion .girado:hover img {
+  transform: translate(0, 0);
+}
+.educacion .girado img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(80px, 0);
+}
+.educacion h2 {
+  font-size: 80px;
+  margin-top: 80px;
+  margin: 80px 40px;
+}
+.educacion div {
+  font-size: 28px;
+  margin-right: 20px;
+}
+.educacion div div {
+  display: flex;
+  align-items: center;
+}
+.educacion div div i {
+  font-size: 140px;
+}
+.educacion div div div {
+  display: block;
+  margin-bottom: 40px;
+}
+.educacion div div div h4 {
+  margin-left: auto;
+  margin-bottom: 4px;
+}
+.educacion div div div span {
+  font-size: 16px;
+  margin: 0;
+  line-height: 0;
+}
+
+.contactame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #02031c;
+  overflow: hidden;
+}
+.contactame .azul {
+  background-image: url("../images/rectangulo_azul.png");
+  width: 60%;
+  height: 600px;
+  margin: 0px 0px 40px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transform: translate(80px, 0);
+}
+.contactame .azul:hover {
+  transform: translate(0, 0);
+}
+.contactame .azul:hover img {
+  transform: translate(0, 0);
+}
+.contactame .azul img {
+  width: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-80px, 0);
+}
+.contactame div {
+  margin-left: 60px;
+}
+.contactame div h2 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.contactame div div {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.contactame div div i {
+  font-size: 80px;
+}
+.contactame div div p {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #02031c;
+  padding: 20px;
+}
+footer h3 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.4;
+}/*# sourceMappingURL=styles.css.map */
